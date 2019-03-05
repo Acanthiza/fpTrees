@@ -1,0 +1,115 @@
+SPECIES,HYDRO_GP,TCI,n,per
+Acacia stenophylla,Group 2,2,15,0.375
+Acacia stenophylla,Group 2,3,46,1.15
+Acacia stenophylla,Group 2,4,134,3.35
+Acacia stenophylla,Group 2,5,338,8.45
+Acacia stenophylla,Group 2,6,517,12.925
+Acacia stenophylla,Group 2,7,757,18.925
+Acacia stenophylla,Group 2,8,767,19.175
+Acacia stenophylla,Group 2,9,659,16.475
+Acacia stenophylla,Group 2,10,432,10.8
+Acacia stenophylla,Group 2,11,231,5.775
+Acacia stenophylla,Group 2,12,88,2.2
+Acacia stenophylla,Group 2,13,14,0.35
+Acacia stenophylla,Group 2,14,2,0.05
+Acacia stenophylla,Group 3,0,3,0.075
+Acacia stenophylla,Group 3,1,21,0.525
+Acacia stenophylla,Group 3,2,94,2.35
+Acacia stenophylla,Group 3,3,279,6.975
+Acacia stenophylla,Group 3,4,514,12.85
+Acacia stenophylla,Group 3,5,656,16.4
+Acacia stenophylla,Group 3,6,799,19.975
+Acacia stenophylla,Group 3,7,677,16.925
+Acacia stenophylla,Group 3,8,471,11.775
+Acacia stenophylla,Group 3,9,276,6.9
+Acacia stenophylla,Group 3,10,139,3.475
+Acacia stenophylla,Group 3,11,56,1.4
+Acacia stenophylla,Group 3,12,13,0.325
+Acacia stenophylla,Group 3,13,2,0.05
+Eucalyptus camaldulensis ssp. camaldulensis,Group 2,0,432,10.8
+Eucalyptus camaldulensis ssp. camaldulensis,Group 2,1,883,22.075
+Eucalyptus camaldulensis ssp. camaldulensis,Group 2,2,971,24.275
+Eucalyptus camaldulensis ssp. camaldulensis,Group 2,3,774,19.35
+Eucalyptus camaldulensis ssp. camaldulensis,Group 2,4,490,12.25
+Eucalyptus camaldulensis ssp. camaldulensis,Group 2,5,249,6.225
+Eucalyptus camaldulensis ssp. camaldulensis,Group 2,6,123,3.075
+Eucalyptus camaldulensis ssp. camaldulensis,Group 2,7,53,1.325
+Eucalyptus camaldulensis ssp. camaldulensis,Group 2,8,18,0.45
+Eucalyptus camaldulensis ssp. camaldulensis,Group 2,9,5,0.125
+Eucalyptus camaldulensis ssp. camaldulensis,Group 2,10,1,0.025
+Eucalyptus camaldulensis ssp. camaldulensis,Group 2,11,1,0.025
+Eucalyptus camaldulensis ssp. camaldulensis,Group 3,0,21,0.525
+Eucalyptus camaldulensis ssp. camaldulensis,Group 3,1,79,1.975
+Eucalyptus camaldulensis ssp. camaldulensis,Group 3,2,133,3.325
+Eucalyptus camaldulensis ssp. camaldulensis,Group 3,3,204,5.1
+Eucalyptus camaldulensis ssp. camaldulensis,Group 3,4,320,8
+Eucalyptus camaldulensis ssp. camaldulensis,Group 3,5,343,8.575
+Eucalyptus camaldulensis ssp. camaldulensis,Group 3,6,431,10.775
+Eucalyptus camaldulensis ssp. camaldulensis,Group 3,7,464,11.6
+Eucalyptus camaldulensis ssp. camaldulensis,Group 3,8,438,10.95
+Eucalyptus camaldulensis ssp. camaldulensis,Group 3,9,457,11.425
+Eucalyptus camaldulensis ssp. camaldulensis,Group 3,10,394,9.85
+Eucalyptus camaldulensis ssp. camaldulensis,Group 3,11,295,7.375
+Eucalyptus camaldulensis ssp. camaldulensis,Group 3,12,230,5.75
+Eucalyptus camaldulensis ssp. camaldulensis,Group 3,13,135,3.375
+Eucalyptus camaldulensis ssp. camaldulensis,Group 3,14,56,1.4
+Eucalyptus camaldulensis ssp. camaldulensis,Group 5,0,8,0.2
+Eucalyptus camaldulensis ssp. camaldulensis,Group 5,1,28,0.7
+Eucalyptus camaldulensis ssp. camaldulensis,Group 5,2,40,1
+Eucalyptus camaldulensis ssp. camaldulensis,Group 5,3,70,1.75
+Eucalyptus camaldulensis ssp. camaldulensis,Group 5,4,100,2.5
+Eucalyptus camaldulensis ssp. camaldulensis,Group 5,5,146,3.65
+Eucalyptus camaldulensis ssp. camaldulensis,Group 5,6,202,5.05
+Eucalyptus camaldulensis ssp. camaldulensis,Group 5,7,280,7
+Eucalyptus camaldulensis ssp. camaldulensis,Group 5,8,372,9.3
+Eucalyptus camaldulensis ssp. camaldulensis,Group 5,9,402,10.05
+Eucalyptus camaldulensis ssp. camaldulensis,Group 5,10,461,11.525
+Eucalyptus camaldulensis ssp. camaldulensis,Group 5,11,544,13.6
+Eucalyptus camaldulensis ssp. camaldulensis,Group 5,12,516,12.9
+Eucalyptus camaldulensis ssp. camaldulensis,Group 5,13,521,13.025
+Eucalyptus camaldulensis ssp. camaldulensis,Group 5,14,310,7.75
+Eucalyptus largiflorens,Group 1,0,15,0.375
+Eucalyptus largiflorens,Group 1,1,70,1.75
+Eucalyptus largiflorens,Group 1,2,149,3.725
+Eucalyptus largiflorens,Group 1,3,293,7.325
+Eucalyptus largiflorens,Group 1,4,430,10.75
+Eucalyptus largiflorens,Group 1,5,524,13.1
+Eucalyptus largiflorens,Group 1,6,636,15.9
+Eucalyptus largiflorens,Group 1,7,604,15.1
+Eucalyptus largiflorens,Group 1,8,463,11.575
+Eucalyptus largiflorens,Group 1,9,382,9.55
+Eucalyptus largiflorens,Group 1,10,244,6.1
+Eucalyptus largiflorens,Group 1,11,108,2.7
+Eucalyptus largiflorens,Group 1,12,65,1.625
+Eucalyptus largiflorens,Group 1,13,13,0.325
+Eucalyptus largiflorens,Group 1,14,4,0.1
+Eucalyptus largiflorens,Group 2,0,1,0.025
+Eucalyptus largiflorens,Group 2,1,17,0.425
+Eucalyptus largiflorens,Group 2,2,37,0.925
+Eucalyptus largiflorens,Group 2,3,118,2.95
+Eucalyptus largiflorens,Group 2,4,235,5.875
+Eucalyptus largiflorens,Group 2,5,372,9.3
+Eucalyptus largiflorens,Group 2,6,511,12.775
+Eucalyptus largiflorens,Group 2,7,575,14.375
+Eucalyptus largiflorens,Group 2,8,611,15.275
+Eucalyptus largiflorens,Group 2,9,578,14.45
+Eucalyptus largiflorens,Group 2,10,433,10.825
+Eucalyptus largiflorens,Group 2,11,280,7
+Eucalyptus largiflorens,Group 2,12,157,3.925
+Eucalyptus largiflorens,Group 2,13,60,1.5
+Eucalyptus largiflorens,Group 2,14,15,0.375
+Eucalyptus largiflorens,Group 3,0,1,0.025
+Eucalyptus largiflorens,Group 3,1,7,0.175
+Eucalyptus largiflorens,Group 3,2,8,0.2
+Eucalyptus largiflorens,Group 3,3,35,0.875
+Eucalyptus largiflorens,Group 3,4,81,2.025
+Eucalyptus largiflorens,Group 3,5,157,3.925
+Eucalyptus largiflorens,Group 3,6,244,6.1
+Eucalyptus largiflorens,Group 3,7,313,7.825
+Eucalyptus largiflorens,Group 3,8,477,11.925
+Eucalyptus largiflorens,Group 3,9,552,13.8
+Eucalyptus largiflorens,Group 3,10,593,14.825
+Eucalyptus largiflorens,Group 3,11,592,14.8
+Eucalyptus largiflorens,Group 3,12,489,12.225
+Eucalyptus largiflorens,Group 3,13,328,8.2
+Eucalyptus largiflorens,Group 3,14,123,3.075

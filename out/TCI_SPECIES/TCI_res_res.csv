@@ -1,0 +1,31 @@
+time,Year,SPECIES,HYDRO_GP,n,nCheck,modMedian,modMean,modci90lo,modci90up,ci
+-3,2015,Acacia stenophylla,Group 2,4000,4000,8,7.831,5,11,6
+-3,2015,Acacia stenophylla,Group 3,4000,4000,6,6.0595,3,9,6
+-3,2015,Eucalyptus camaldulensis ssp. camaldulensis,Group 2,4000,4000,2,2.44725,0,6,6
+-3,2015,Eucalyptus camaldulensis ssp. camaldulensis,Group 3,4000,4000,8,7.52875,2,13,11
+-3,2015,Eucalyptus camaldulensis ssp. camaldulensis,Group 5,4000,4000,10,9.7535,4,14,10
+-3,2015,Eucalyptus largiflorens,Group 1,4000,4000,6,6.3485,2,11,9
+-3,2015,Eucalyptus largiflorens,Group 2,4000,4000,8,7.6495,4,12,8
+-3,2015,Eucalyptus largiflorens,Group 3,4000,4000,10,9.40975,5,13,8
+-2,2016,Acacia stenophylla,Group 2,4000,4000,8,8.402,5,11,6
+-2,2016,Acacia stenophylla,Group 3,4000,4000,7,7.18825,4,10,6
+-2,2016,Eucalyptus camaldulensis ssp. camaldulensis,Group 2,4000,4000,4,4.4115,1,8,7
+-2,2016,Eucalyptus camaldulensis ssp. camaldulensis,Group 3,4000,4000,9,8.358,4,12,8
+-2,2016,Eucalyptus camaldulensis ssp. camaldulensis,Group 5,4000,4000,11,10.557,6,14,8
+-2,2016,Eucalyptus largiflorens,Group 1,4000,4000,8,7.652,4,11,7
+-2,2016,Eucalyptus largiflorens,Group 2,4000,4000,9,8.90025,5,12,7
+-2,2016,Eucalyptus largiflorens,Group 3,4000,4000,10,9.975,6,13,7
+0,2018,Acacia stenophylla,Group 0,4000,4000,7,7.165,4,10,6
+0,2018,Acacia stenophylla,Group 1,4000,4000,9,8.5335,5,12,7
+0,2018,Acacia stenophylla,Group 2,4000,4000,10,9.621,6,12,6
+0,2018,Acacia stenophylla,Group 3,4000,4000,10,9.5925,6,12,6
+0,2018,Acacia stenophylla,Group 5,4000,4000,9,9.1725,6,12,6
+0,2018,Eucalyptus camaldulensis ssp. camaldulensis,Group 1,4000,4000,10,9.92675,7,13,6
+0,2018,Eucalyptus camaldulensis ssp. camaldulensis,Group 2,4000,4000,10,9.7025,6,13,7
+0,2018,Eucalyptus camaldulensis ssp. camaldulensis,Group 3,4000,4000,10,10.02725,7,13,6
+0,2018,Eucalyptus camaldulensis ssp. camaldulensis,Group 5,4000,4000,12,11.8215,9,14,5
+0,2018,Eucalyptus largiflorens,Group 0,4000,4000,10,9.762,7,12,5
+0,2018,Eucalyptus largiflorens,Group 1,4000,4000,10,9.9805,7,13,6
+0,2018,Eucalyptus largiflorens,Group 2,4000,4000,11,10.88375,8,14,6
+0,2018,Eucalyptus largiflorens,Group 3,4000,4000,11,10.966,8,13,5
+0,2018,Eucalyptus largiflorens,Group 5,4000,4000,12,11.68325,9,14,5

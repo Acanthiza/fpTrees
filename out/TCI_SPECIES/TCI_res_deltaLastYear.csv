@@ -1,0 +1,10 @@
+SPECIES,direction,n,prob
+Acacia stenophylla,positive,1622,40.55
+Eucalyptus camaldulensis ssp. camaldulensis,positive,1867,46.675
+Eucalyptus largiflorens,positive,1704,42.6
+Acacia stenophylla,negative,1740,43.5
+Eucalyptus camaldulensis ssp. camaldulensis,negative,1480,37
+Eucalyptus largiflorens,negative,1674,41.85
+Acacia stenophylla,stable,638,15.95
+Eucalyptus camaldulensis ssp. camaldulensis,stable,653,16.325
+Eucalyptus largiflorens,stable,622,15.55

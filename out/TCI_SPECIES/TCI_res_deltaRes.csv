@@ -1,0 +1,64 @@
+HYDRO_GP,SPECIES,Year,direction,n,prob
+Group 0,Acacia stenophylla,2018,Higher,573,14.325
+Group 0,Eucalyptus largiflorens,2018,Higher,1012,25.3
+Group 1,Acacia stenophylla,2018,Higher,1103,27.575
+Group 1,Eucalyptus camaldulensis ssp. camaldulensis,2018,Higher,1772,44.3
+Group 1,Eucalyptus largiflorens,2015,Higher,1106,27.65
+Group 1,Eucalyptus largiflorens,2016,Higher,1074,26.85
+Group 1,Eucalyptus largiflorens,2018,Higher,1172,29.3
+Group 3,Acacia stenophylla,2015,Higher,876,21.9
+Group 3,Acacia stenophylla,2016,Higher,1069,26.725
+Group 3,Acacia stenophylla,2018,Higher,1691,42.275
+Group 3,Eucalyptus camaldulensis ssp. camaldulensis,2015,Higher,3618,90.45
+Group 3,Eucalyptus camaldulensis ssp. camaldulensis,2016,Higher,3449,86.225
+Group 3,Eucalyptus camaldulensis ssp. camaldulensis,2018,Higher,1908,47.7
+Group 3,Eucalyptus largiflorens,2015,Higher,2552,63.8
+Group 3,Eucalyptus largiflorens,2016,Higher,2274,56.85
+Group 3,Eucalyptus largiflorens,2018,Higher,1752,43.8
+Group 5,Acacia stenophylla,2018,Higher,1452,36.3
+Group 5,Eucalyptus camaldulensis ssp. camaldulensis,2015,Higher,3856,96.4
+Group 5,Eucalyptus camaldulensis ssp. camaldulensis,2016,Higher,3856,96.4
+Group 5,Eucalyptus camaldulensis ssp. camaldulensis,2018,Higher,3023,75.575
+Group 5,Eucalyptus largiflorens,2018,Higher,2173,54.325
+Group 0,Acacia stenophylla,2018,Lower,3032,75.8
+Group 0,Eucalyptus largiflorens,2018,Lower,2422,60.55
+Group 1,Acacia stenophylla,2018,Lower,2374,59.35
+Group 1,Eucalyptus camaldulensis ssp. camaldulensis,2018,Lower,1520,38
+Group 1,Eucalyptus largiflorens,2015,Lower,2426,60.65
+Group 1,Eucalyptus largiflorens,2016,Lower,2417,60.425
+Group 1,Eucalyptus largiflorens,2018,Lower,2254,56.35
+Group 3,Acacia stenophylla,2015,Lower,2709,67.725
+Group 3,Acacia stenophylla,2016,Lower,2419,60.475
+Group 3,Acacia stenophylla,2018,Lower,1712,42.8
+Group 3,Eucalyptus camaldulensis ssp. camaldulensis,2015,Lower,217,5.425
+Group 3,Eucalyptus camaldulensis ssp. camaldulensis,2016,Lower,332,8.3
+Group 3,Eucalyptus camaldulensis ssp. camaldulensis,2018,Lower,1471,36.775
+Group 3,Eucalyptus largiflorens,2015,Lower,1054,26.35
+Group 3,Eucalyptus largiflorens,2016,Lower,1286,32.15
+Group 3,Eucalyptus largiflorens,2018,Lower,1654,41.35
+Group 5,Acacia stenophylla,2018,Lower,1973,49.325
+Group 5,Eucalyptus camaldulensis ssp. camaldulensis,2015,Lower,82,2.05
+Group 5,Eucalyptus camaldulensis ssp. camaldulensis,2016,Lower,80,2
+Group 5,Eucalyptus camaldulensis ssp. camaldulensis,2018,Lower,497,12.425
+Group 5,Eucalyptus largiflorens,2018,Lower,1103,27.575
+Group 0,Acacia stenophylla,2018,Same,395,9.875
+Group 0,Eucalyptus largiflorens,2018,Same,566,14.15
+Group 1,Acacia stenophylla,2018,Same,523,13.075
+Group 1,Eucalyptus camaldulensis ssp. camaldulensis,2018,Same,708,17.7
+Group 1,Eucalyptus largiflorens,2015,Same,468,11.7
+Group 1,Eucalyptus largiflorens,2016,Same,509,12.725
+Group 1,Eucalyptus largiflorens,2018,Same,574,14.35
+Group 3,Acacia stenophylla,2015,Same,415,10.375
+Group 3,Acacia stenophylla,2016,Same,512,12.8
+Group 3,Acacia stenophylla,2018,Same,597,14.925
+Group 3,Eucalyptus camaldulensis ssp. camaldulensis,2015,Same,165,4.125
+Group 3,Eucalyptus camaldulensis ssp. camaldulensis,2016,Same,219,5.475
+Group 3,Eucalyptus camaldulensis ssp. camaldulensis,2018,Same,621,15.525
+Group 3,Eucalyptus largiflorens,2015,Same,394,9.85
+Group 3,Eucalyptus largiflorens,2016,Same,440,11
+Group 3,Eucalyptus largiflorens,2018,Same,594,14.85
+Group 5,Acacia stenophylla,2018,Same,575,14.375
+Group 5,Eucalyptus camaldulensis ssp. camaldulensis,2015,Same,62,1.55
+Group 5,Eucalyptus camaldulensis ssp. camaldulensis,2016,Same,64,1.6
+Group 5,Eucalyptus camaldulensis ssp. camaldulensis,2018,Same,480,12
+Group 5,Eucalyptus largiflorens,2018,Same,724,18.1

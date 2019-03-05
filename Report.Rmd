@@ -1,0 +1,430 @@
+---
+title: "FOR OFFICIAL USE ONLY"
+subtitle: "Analysis of Katarapko Tree Condition Data"
+author:
+- Department for Environment and Water
+- Environmental Science and Information Branch
+date: "`r format(Sys.time(), '%A, %d %B, %Y')`"
+output:
+  bookdown::gitbook:
+    split_by: chapter
+    toc_depth: 3
+    css: style.css
+csl:                          "common/BibStyle.csl"
+bibliography:                 ["common/refs.bib","common/packageCitations.bib"]
+link-citations: yes
+editor_options: 
+  chunk_output_type: console
+---
+
+```{r setup, warning = FALSE, message = FALSE, echo = FALSE, results = "hide"}
+
+# Load required packages in a manner enabling automatic citations, including base R
+
+  packages <- c("base"
+                ,"knitr"
+                ,"bookdown"
+                ,"readr"
+                ,"readxl"
+                ,"dplyr"
+                ,"tidyr"
+                ,"purrr"
+                ,"tibble"
+                ,"stringr"
+                ,"forcats"
+                ,"ggplot2"
+                ,"lubridate"
+                ,"ggridges"
+                ,"gridExtra"
+                ,"DT"
+                ,"tmap"
+                ,"DataExplorer"
+                ,"rstan"
+                ,"rstanarm"
+                ,"mgcv" # referenced in geom_smooth
+                )
+
+  purrr::walk(packages,library,character.only=TRUE)
+  
+  write_bib(packages,file="common/packageCitations.bib",tweak=TRUE)
+  
+  
+# Load useful functions
+  
+  source("common/functions.R")
+
+# Set default chunk options (can adjust individual chunks differently if required)
+
+  knitr::opts_chunk$set(warning = FALSE
+                        , message = FALSE
+                        , echo = FALSE
+                        )
+  
+  options(knitr.kable.NA = "")
+  
+# Set mapping defaults
+  
+  tmap_options(basemaps = c("OpenStreetMap.Mapnik"
+                            , "Esri.WorldImagery"
+                            )
+               )
+
+
+#ggplot options
+  theme_set(theme_grey()) # need to reset this to default after loading bayesplot
+  
+  
+# don't use scientific notation for numbers
+  options(scipen = 999)
+  
+
+# Other constants
+  
+  useName <- "Katarapko tree condition"
+  
+  #wordDir <- "https://subversion.dev.env.sa.gov.au/svn/repos/science/fpTrees"
+  
+  workDir <- here::here()
+  
+```
+
+```{r functions}
+
+  # Tree colours
+  treeCol <- c("darkred", "black", "#33A02C")
+  names(treeCol) <- c("RRG","BB","Cooba")
+  treeColFill <- scale_fill_manual(name = "Species",values = treeCol)
+  treeColCol <- scale_colour_manual(name = "Species",values = treeCol)
+
+```
+
+```{r data}
+
+  source("010_data_get.R")
+  source("020_data_prep.R")
+  source("030_analysis.R")
+  
+  mapBB <- st_bbox(dat)
+  
+```
+
+
+
+# Introduction
+
+
+
+## Strategic context
+
+
+
+## This study
+
+Are trees/transects from Group 3 in significantly better condition than trees/transects in Group 2 in (a) 2015 and (b) 2018?
+
+Are trees/transects from Group 3 in significantly better condition than trees/transects in Group 5 (a) 2015 and (b) 2018?
+Group 1 vs Group 2/3?, Group 0 to Group 2/3?
+
+Is condition more varied in Group 2 than Group 3, in (a) 2015 and in (b) 2018?
+
+Is condition more varied in Group 2 than Group 5, in (a) 2015 and in (b) 2018?
+
+    
+# Methods
+
+## Data collection
+
+##
+
+
+
+
+## Workflow
+
+All data analysis and report writing was done in a single scripted workflow (script file: [`r list.files(here::here(),pattern="Report.Rmd",recursive=TRUE)`](`r paste0(here::here(),"/",list.files(here::here(),pattern="Report.Rmd",recursive=TRUE))`) using the programs 'R' and 'R-studio'.
+
+[R](https://www.r-project.org/) [@R-base] is an open-source platform which makes available a library of packages that can be used and modified as necessary. [R-studio](https://www.rstudio.com/) provides a range of user-friendly features to facilitate interaction with R. The packages used are listed in the appendix: [R packages used] Table \@ref(tab:packages).
+
+All data, code and outputs are stored in [`r here::here()`](`r here::here()`).
+
+## Model
+
+Trend in `r Y` was analysed using a Bayesian generalised linear mixed model. The analysis was run using the rstanarm package [@RN4481] in R [@R-base]. Transect was treated as a random effect in the analysis. Each tree was then assumed to provide an independent data point for the analysis. A time field was generated as $time = min(Year) + (max(Year) - min(Year))/2$. The model specification was:
+
+``r format(formula(mod))``
+
+## Trees
+
+There were `r nrow(datExp)` trees available for analysis (see table below). The distribution of these trees on the Katarapko floodplain is shown in Figure \@ref(fig:treesMap).
+
+```{r trees}
+
+  trees <- datExp %>%
+    dplyr::mutate(Transect = as.factor(Transect)) %>%
+    dplyr::group_by(Species,Transect,HydroGp,Year) %>%
+    dplyr::summarise(n = n()
+                     , UQ(rlang::sym(Y)) := median(!!ensym(Y))
+                     ) %>%
+    dplyr::group_by(Species,HydroGp,Year) %>%
+    dplyr::summarise(Transects = n()
+                     , Trees = sum(n)
+                     , `Median value` = median(!!ensym(Y))
+                     ) %>%
+    dplyr::ungroup()
+
+  datatable(trees
+            , filter = "top"
+            , extensions = c("Responsive","Buttons")
+            , options = list(dom = 'Bfrtip'
+                             , buttons = c('copy'
+                                           #, 'csv'
+                                           #, 'excel'
+                                           #, 'pdf'
+                                           #, 'print'
+                                           )
+                             )
+            )
+
+```
+
+---
+
+```{r treesMap, fig.cap = "Tree locations on Katarapko floodplain"}
+
+  tmap_leaflet(
+    
+    tm_shape(dat) +
+      tm_dots(col = "HydroGp"
+              , popup.vars = c(Y,"Species","HydroGp","LOCCOMM")
+              ) +
+      tm_view(bbox = mapBB) +
+      tm_scale_bar()
+    
+  )
+
+```
+
+---
+
+# Results
+
+## Model diagnostics
+
+### MCMC diagnostics
+
+Figure \@ref(fig:mixing) and Figure \@ref(fig:rhat) provide visualisations for Markov Chain Monte Carlo (MCMC) diagnostics after fitting a Bayesian model.
+
+```{r mixing, fig.cap = "Chain mixing. With good mixing there should be no pattern discernable"}
+
+  stan_trace(mod)
+
+```
+
+---
+
+```{r rhat, fig.cap = "Rhat values - a measure of all chains being at the same equilibrium value. These should all be close to 1."}
+
+  plot(mod, "rhat_hist")
+
+```
+
+---
+
+### `r Y` vs Residuals
+
+Figure \@ref(fig:yResid) shows residuals plotted against `r Y`. Ideally these residuals will show no pattern - i.e. randomly distributed about zero. However, in this case, at low values of `r Y` the model is under-predicting (negative residuals) while at high values the model is over-predicting (positive residuals).
+
+```{r yResid, fig.cap = "Residuals"}
+
+  # Y vs. residuals
+  ggplot(modResid, aes(!!ensym(Y),residual,label=Transect,colour=Transect)) +
+    geom_text(size = 2
+              #, alpha=0.5
+              , position=position_jitter(width=0.3,height=0.2)
+              ) +
+    geom_hline(aes(yintercept = 0),linetype = 2) +
+    facet_grid(Species~HydroGp) +
+    scale_colour_gradient2(mid = "yellow",midpoint=(max(datExp$Transect)-min(datExp$Transect))/2)
+
+```
+
+---
+
+### Model fit
+
+Figure \@ref(fig:modFit) shows how a subset of the model runs (light blue lines) fits to the original data (dark blue line).
+
+```{r modFit, fig.height = 8, fig.cap = "Model fit"}
+
+  # Model fit
+    a <- pp_check(mod) + coord_cartesian(xlim = c(0,quantile(mod$fitted.values,probs=0.05))) + labs(title = "0-quantile(0.05)")
+    b <- pp_check(mod) + coord_cartesian(xlim = c(0,quantile(mod$fitted.values,probs=0.5))) + labs(title = "0-quantile(0.5)")
+    c <- pp_check(mod) + labs(title = "0-max pred")
+    d <- grid.arrange(a,b,c)
+
+
+```
+
+## `r Y`
+
+Table \@ref(tab:valueTab) shows median credible estimates for `r Y`.
+
+Table \@ref(tab:valueCI) shows the 95% credible interval range for `r Y`.
+
+Figure \@ref(fig:valueFig) shows the distribution of credible values for `r Y`.
+
+```{r valueTab}
+
+  kable(modRes %>%
+          dplyr::select(Year,HydroGp, Species, modMedian) %>%
+          tidyr::spread(Species, modMedian) %>%
+          dplyr::arrange(HydroGp,Year)
+        , caption = paste0("Median credible value for ",Y)
+        )
+
+```
+
+---
+
+```{r valueCI}
+
+  kable(modRes %>%
+          dplyr::select(Year,HydroGp, Species, text) %>%
+          tidyr::spread(Species, text) %>%
+          dplyr::arrange(HydroGp,Year)
+        , caption = paste0("95% credible interval range for ",Y)
+        )
+
+```
+
+---
+
+```{r valueFig, fig.height = 8, fig.cap = paste0(Y, " change with Year for each species and group")}
+
+  modPred %>%
+    ggplot() +
+      stat_density_ridges(aes(value,factor(Year),fill=Species)
+                          , quantile_lines = TRUE
+                          , quantiles = c(0.025, 0.975)
+                          , panel_scaling = FALSE
+                          , alpha = 0.5
+                          ) +
+      facet_grid(HydroGp~Species) +
+      labs(subtitle = paste0("Distribution of credible values for ",Y)
+           , caption = "Within the lines on each distribution represents 95% credible intervals"
+           , y = "Year"
+           , x = Y
+           ) +
+      treeColFill +
+      theme(axis.text.y = element_text(vjust = 0))
+
+```
+
+## Difference to Group 2
+
+Table \@ref(tab:diffTab) shows the likelihood that Group x has higher `r Y` than Group 2.
+
+Figure \@ref(fig:diffFig) shows the distribution of credible values for the difference between Group x and Group 2.
+
+```{r diffTab}
+
+  kable(modDeltaRes %>%
+              dplyr::select(-n) %>%
+              dplyr::filter(direction == "Higher") %>%
+              dplyr::mutate(prob = round(prob,1)) %>%
+              dplyr::select(HydroGp,Year,Species,prob) %>%
+              tidyr::spread(Species,prob) %>%
+              dplyr::arrange(HydroGp,Year)
+              
+          , caption = paste0("Likelihood of higher ",Y," in Group x compared to Group 2")
+        )
+
+```
+
+---
+
+```{r diffFig, fig.height = 8, fig.cap = paste0("By 2018 there is little difference from Group 2. In Group 3 for all three species, and in Group 5 for RRG, ",Y," was higher than Group 2 prior to 2018 (much stronger for RRG than BB). However, by 2018 there is little difference in ",Y," within a species between groups")}
+
+  ggplot(modDelta
+           , aes(diff
+                 , factor(Year)
+                 , fill = Species
+                 )
+           ) +
+      stat_density_ridges(quantile_lines = TRUE
+                          , quantiles = c(0.025, 0.975)
+                          , alpha=0.5
+                          , panel_scaling = FALSE
+                          ) +
+      geom_vline(aes(xintercept = 0)
+                 , linetype = 2
+                 , colour = "red"
+                 ) +
+      facet_grid(HydroGp~Species) +
+      labs(subtitle = paste0("Distribution of credible values for the difference from Group 2 ",Y)
+           , caption = "Within the lines on each distribution represents 95% credible intervals"
+           , y = "Year"
+           , x = "Group x - Group 2"
+           ) +
+      guides(fill = FALSE) +
+      treeColFill +
+      theme(axis.text.y = element_text(vjust = 0))
+
+```
+
+---
+
+## Overall results
+
+Overall model results are shown in Figure \@ref(fig:modRes).
+
+```{r modRes, fig.cap = "Plot of model results along with raw data"}
+
+  ggplot() +
+    geom_text(data = datExp
+              , aes(Year
+                    ,!!ensym(Y)
+                    , colour = Transect
+                    , label = Transect
+                    )
+              , position = position_jitter()
+              , size = 2
+              ) +
+    geom_line(data = modRes
+              , aes(Year,modMedian)
+              ) +
+    geom_ribbon(data = modRes
+                , aes(Year,ymin=modci90lo,ymax=modci90up,fill=Species)
+                , alpha = 0.3
+                ) +
+    facet_grid(Species~HydroGp) +
+    theme(axis.text.x = element_text(angle=90, hjust=0)) +
+    scale_colour_gradient2(mid = "yellow",midpoint=(max(datExp$Transect)-min(datExp$Transect))/2) +
+    treeColFill
+
+```
+
+---
+
+# Appendix
+
+## R packages used
+
+```{r packages, fig.cap = "R [@R-base] packages used to produce this report"}
+
+  kable(tibble(Package = read_lines("common/packageCitations.bib")) %>%
+    dplyr::filter(grepl("@",Package)
+                  , !grepl("CiteR",Package)
+                  ) %>%
+    dplyr::mutate(Package = gsub("@Manual\\{|,|R-","",Package)) %>%
+    dplyr::arrange() %>%
+    dplyr::mutate(Citation = paste0("@R-",Package))
+   , caption = "R [@R-base] packages used in the production of this report" 
+   )
+
+```
+
+# References
+
+
+

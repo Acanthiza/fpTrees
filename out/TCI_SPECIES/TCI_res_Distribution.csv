@@ -1,0 +1,392 @@
+SPECIES,Year,HYDRO_GP,TCI,n,per
+Acacia stenophylla,2015,Group 2,1,3,0.075
+Acacia stenophylla,2015,Group 2,2,13,0.325
+Acacia stenophylla,2015,Group 2,3,48,1.2
+Acacia stenophylla,2015,Group 2,4,130,3.25
+Acacia stenophylla,2015,Group 2,5,290,7.25
+Acacia stenophylla,2015,Group 2,6,556,13.9
+Acacia stenophylla,2015,Group 2,7,750,18.75
+Acacia stenophylla,2015,Group 2,8,754,18.85
+Acacia stenophylla,2015,Group 2,9,686,17.15
+Acacia stenophylla,2015,Group 2,10,460,11.5
+Acacia stenophylla,2015,Group 2,11,198,4.95
+Acacia stenophylla,2015,Group 2,12,87,2.175
+Acacia stenophylla,2015,Group 2,13,22,0.55
+Acacia stenophylla,2015,Group 2,14,3,0.075
+Acacia stenophylla,2015,Group 3,0,5,0.125
+Acacia stenophylla,2015,Group 3,1,25,0.625
+Acacia stenophylla,2015,Group 3,2,95,2.375
+Acacia stenophylla,2015,Group 3,3,283,7.075
+Acacia stenophylla,2015,Group 3,4,495,12.375
+Acacia stenophylla,2015,Group 3,5,702,17.55
+Acacia stenophylla,2015,Group 3,6,801,20.025
+Acacia stenophylla,2015,Group 3,7,669,16.725
+Acacia stenophylla,2015,Group 3,8,498,12.45
+Acacia stenophylla,2015,Group 3,9,260,6.5
+Acacia stenophylla,2015,Group 3,10,115,2.875
+Acacia stenophylla,2015,Group 3,11,41,1.025
+Acacia stenophylla,2015,Group 3,12,11,0.275
+Acacia stenophylla,2016,Group 2,1,1,0.025
+Acacia stenophylla,2016,Group 2,2,5,0.125
+Acacia stenophylla,2016,Group 2,3,16,0.4
+Acacia stenophylla,2016,Group 2,4,63,1.575
+Acacia stenophylla,2016,Group 2,5,176,4.4
+Acacia stenophylla,2016,Group 2,6,369,9.225
+Acacia stenophylla,2016,Group 2,7,601,15.025
+Acacia stenophylla,2016,Group 2,8,800,20
+Acacia stenophylla,2016,Group 2,9,759,18.975
+Acacia stenophylla,2016,Group 2,10,622,15.55
+Acacia stenophylla,2016,Group 2,11,388,9.7
+Acacia stenophylla,2016,Group 2,12,156,3.9
+Acacia stenophylla,2016,Group 2,13,41,1.025
+Acacia stenophylla,2016,Group 2,14,3,0.075
+Acacia stenophylla,2016,Group 3,1,4,0.1
+Acacia stenophylla,2016,Group 3,2,26,0.65
+Acacia stenophylla,2016,Group 3,3,81,2.025
+Acacia stenophylla,2016,Group 3,4,235,5.875
+Acacia stenophylla,2016,Group 3,5,412,10.3
+Acacia stenophylla,2016,Group 3,6,670,16.75
+Acacia stenophylla,2016,Group 3,7,768,19.2
+Acacia stenophylla,2016,Group 3,8,711,17.775
+Acacia stenophylla,2016,Group 3,9,566,14.15
+Acacia stenophylla,2016,Group 3,10,313,7.825
+Acacia stenophylla,2016,Group 3,11,157,3.925
+Acacia stenophylla,2016,Group 3,12,39,0.975
+Acacia stenophylla,2016,Group 3,13,14,0.35
+Acacia stenophylla,2016,Group 3,14,4,0.1
+Acacia stenophylla,2018,Group 0,0,2,0.05
+Acacia stenophylla,2018,Group 0,1,5,0.125
+Acacia stenophylla,2018,Group 0,2,33,0.825
+Acacia stenophylla,2018,Group 0,3,81,2.025
+Acacia stenophylla,2018,Group 0,4,258,6.45
+Acacia stenophylla,2018,Group 0,5,438,10.95
+Acacia stenophylla,2018,Group 0,6,673,16.825
+Acacia stenophylla,2018,Group 0,7,776,19.4
+Acacia stenophylla,2018,Group 0,8,700,17.5
+Acacia stenophylla,2018,Group 0,9,555,13.875
+Acacia stenophylla,2018,Group 0,10,304,7.6
+Acacia stenophylla,2018,Group 0,11,123,3.075
+Acacia stenophylla,2018,Group 0,12,45,1.125
+Acacia stenophylla,2018,Group 0,13,6,0.15
+Acacia stenophylla,2018,Group 0,14,1,0.025
+Acacia stenophylla,2018,Group 1,2,2,0.05
+Acacia stenophylla,2018,Group 1,3,14,0.35
+Acacia stenophylla,2018,Group 1,4,55,1.375
+Acacia stenophylla,2018,Group 1,5,164,4.1
+Acacia stenophylla,2018,Group 1,6,331,8.275
+Acacia stenophylla,2018,Group 1,7,546,13.65
+Acacia stenophylla,2018,Group 1,8,824,20.6
+Acacia stenophylla,2018,Group 1,9,858,21.45
+Acacia stenophylla,2018,Group 1,10,603,15.075
+Acacia stenophylla,2018,Group 1,11,391,9.775
+Acacia stenophylla,2018,Group 1,12,162,4.05
+Acacia stenophylla,2018,Group 1,13,46,1.15
+Acacia stenophylla,2018,Group 1,14,4,0.1
+Acacia stenophylla,2018,Group 2,2,1,0.025
+Acacia stenophylla,2018,Group 2,3,4,0.1
+Acacia stenophylla,2018,Group 2,4,16,0.4
+Acacia stenophylla,2018,Group 2,5,45,1.125
+Acacia stenophylla,2018,Group 2,6,127,3.175
+Acacia stenophylla,2018,Group 2,7,281,7.025
+Acacia stenophylla,2018,Group 2,8,561,14.025
+Acacia stenophylla,2018,Group 2,9,805,20.125
+Acacia stenophylla,2018,Group 2,10,852,21.3
+Acacia stenophylla,2018,Group 2,11,677,16.925
+Acacia stenophylla,2018,Group 2,12,438,10.95
+Acacia stenophylla,2018,Group 2,13,160,4
+Acacia stenophylla,2018,Group 2,14,33,0.825
+Acacia stenophylla,2018,Group 3,3,4,0.1
+Acacia stenophylla,2018,Group 3,4,10,0.25
+Acacia stenophylla,2018,Group 3,5,69,1.725
+Acacia stenophylla,2018,Group 3,6,133,3.325
+Acacia stenophylla,2018,Group 3,7,292,7.3
+Acacia stenophylla,2018,Group 3,8,576,14.4
+Acacia stenophylla,2018,Group 3,9,768,19.2
+Acacia stenophylla,2018,Group 3,10,857,21.425
+Acacia stenophylla,2018,Group 3,11,714,17.85
+Acacia stenophylla,2018,Group 3,12,408,10.2
+Acacia stenophylla,2018,Group 3,13,140,3.5
+Acacia stenophylla,2018,Group 3,14,29,0.725
+Acacia stenophylla,2018,Group 5,2,1,0.025
+Acacia stenophylla,2018,Group 5,3,7,0.175
+Acacia stenophylla,2018,Group 5,4,29,0.725
+Acacia stenophylla,2018,Group 5,5,79,1.975
+Acacia stenophylla,2018,Group 5,6,201,5.025
+Acacia stenophylla,2018,Group 5,7,401,10.025
+Acacia stenophylla,2018,Group 5,8,686,17.15
+Acacia stenophylla,2018,Group 5,9,837,20.925
+Acacia stenophylla,2018,Group 5,10,853,21.325
+Acacia stenophylla,2018,Group 5,11,539,13.475
+Acacia stenophylla,2018,Group 5,12,266,6.65
+Acacia stenophylla,2018,Group 5,13,92,2.3
+Acacia stenophylla,2018,Group 5,14,9,0.225
+Eucalyptus camaldulensis ssp. camaldulensis,2015,Group 2,0,443,11.075
+Eucalyptus camaldulensis ssp. camaldulensis,2015,Group 2,1,857,21.425
+Eucalyptus camaldulensis ssp. camaldulensis,2015,Group 2,2,945,23.625
+Eucalyptus camaldulensis ssp. camaldulensis,2015,Group 2,3,754,18.85
+Eucalyptus camaldulensis ssp. camaldulensis,2015,Group 2,4,520,13
+Eucalyptus camaldulensis ssp. camaldulensis,2015,Group 2,5,276,6.9
+Eucalyptus camaldulensis ssp. camaldulensis,2015,Group 2,6,122,3.05
+Eucalyptus camaldulensis ssp. camaldulensis,2015,Group 2,7,53,1.325
+Eucalyptus camaldulensis ssp. camaldulensis,2015,Group 2,8,20,0.5
+Eucalyptus camaldulensis ssp. camaldulensis,2015,Group 2,9,9,0.225
+Eucalyptus camaldulensis ssp. camaldulensis,2015,Group 2,10,1,0.025
+Eucalyptus camaldulensis ssp. camaldulensis,2015,Group 3,0,24,0.6
+Eucalyptus camaldulensis ssp. camaldulensis,2015,Group 3,1,69,1.725
+Eucalyptus camaldulensis ssp. camaldulensis,2015,Group 3,2,136,3.4
+Eucalyptus camaldulensis ssp. camaldulensis,2015,Group 3,3,217,5.425
+Eucalyptus camaldulensis ssp. camaldulensis,2015,Group 3,4,283,7.075
+Eucalyptus camaldulensis ssp. camaldulensis,2015,Group 3,5,350,8.75
+Eucalyptus camaldulensis ssp. camaldulensis,2015,Group 3,6,462,11.55
+Eucalyptus camaldulensis ssp. camaldulensis,2015,Group 3,7,414,10.35
+Eucalyptus camaldulensis ssp. camaldulensis,2015,Group 3,8,433,10.825
+Eucalyptus camaldulensis ssp. camaldulensis,2015,Group 3,9,448,11.2
+Eucalyptus camaldulensis ssp. camaldulensis,2015,Group 3,10,411,10.275
+Eucalyptus camaldulensis ssp. camaldulensis,2015,Group 3,11,319,7.975
+Eucalyptus camaldulensis ssp. camaldulensis,2015,Group 3,12,211,5.275
+Eucalyptus camaldulensis ssp. camaldulensis,2015,Group 3,13,165,4.125
+Eucalyptus camaldulensis ssp. camaldulensis,2015,Group 3,14,58,1.45
+Eucalyptus camaldulensis ssp. camaldulensis,2015,Group 5,0,5,0.125
+Eucalyptus camaldulensis ssp. camaldulensis,2015,Group 5,1,31,0.775
+Eucalyptus camaldulensis ssp. camaldulensis,2015,Group 5,2,48,1.2
+Eucalyptus camaldulensis ssp. camaldulensis,2015,Group 5,3,76,1.9
+Eucalyptus camaldulensis ssp. camaldulensis,2015,Group 5,4,101,2.525
+Eucalyptus camaldulensis ssp. camaldulensis,2015,Group 5,5,156,3.9
+Eucalyptus camaldulensis ssp. camaldulensis,2015,Group 5,6,216,5.4
+Eucalyptus camaldulensis ssp. camaldulensis,2015,Group 5,7,247,6.175
+Eucalyptus camaldulensis ssp. camaldulensis,2015,Group 5,8,322,8.05
+Eucalyptus camaldulensis ssp. camaldulensis,2015,Group 5,9,426,10.65
+Eucalyptus camaldulensis ssp. camaldulensis,2015,Group 5,10,455,11.375
+Eucalyptus camaldulensis ssp. camaldulensis,2015,Group 5,11,520,13
+Eucalyptus camaldulensis ssp. camaldulensis,2015,Group 5,12,544,13.6
+Eucalyptus camaldulensis ssp. camaldulensis,2015,Group 5,13,539,13.475
+Eucalyptus camaldulensis ssp. camaldulensis,2015,Group 5,14,314,7.85
+Eucalyptus camaldulensis ssp. camaldulensis,2016,Group 2,0,50,1.25
+Eucalyptus camaldulensis ssp. camaldulensis,2016,Group 2,1,201,5.025
+Eucalyptus camaldulensis ssp. camaldulensis,2016,Group 2,2,463,11.575
+Eucalyptus camaldulensis ssp. camaldulensis,2016,Group 2,3,736,18.4
+Eucalyptus camaldulensis ssp. camaldulensis,2016,Group 2,4,739,18.475
+Eucalyptus camaldulensis ssp. camaldulensis,2016,Group 2,5,679,16.975
+Eucalyptus camaldulensis ssp. camaldulensis,2016,Group 2,6,521,13.025
+Eucalyptus camaldulensis ssp. camaldulensis,2016,Group 2,7,319,7.975
+Eucalyptus camaldulensis ssp. camaldulensis,2016,Group 2,8,178,4.45
+Eucalyptus camaldulensis ssp. camaldulensis,2016,Group 2,9,77,1.925
+Eucalyptus camaldulensis ssp. camaldulensis,2016,Group 2,10,25,0.625
+Eucalyptus camaldulensis ssp. camaldulensis,2016,Group 2,11,11,0.275
+Eucalyptus camaldulensis ssp. camaldulensis,2016,Group 2,12,1,0.025
+Eucalyptus camaldulensis ssp. camaldulensis,2016,Group 3,0,5,0.125
+Eucalyptus camaldulensis ssp. camaldulensis,2016,Group 3,1,24,0.6
+Eucalyptus camaldulensis ssp. camaldulensis,2016,Group 3,2,29,0.725
+Eucalyptus camaldulensis ssp. camaldulensis,2016,Group 3,3,100,2.5
+Eucalyptus camaldulensis ssp. camaldulensis,2016,Group 3,4,179,4.475
+Eucalyptus camaldulensis ssp. camaldulensis,2016,Group 3,5,279,6.975
+Eucalyptus camaldulensis ssp. camaldulensis,2016,Group 3,6,361,9.025
+Eucalyptus camaldulensis ssp. camaldulensis,2016,Group 3,7,457,11.425
+Eucalyptus camaldulensis ssp. camaldulensis,2016,Group 3,8,576,14.4
+Eucalyptus camaldulensis ssp. camaldulensis,2016,Group 3,9,572,14.3
+Eucalyptus camaldulensis ssp. camaldulensis,2016,Group 3,10,517,12.925
+Eucalyptus camaldulensis ssp. camaldulensis,2016,Group 3,11,413,10.325
+Eucalyptus camaldulensis ssp. camaldulensis,2016,Group 3,12,303,7.575
+Eucalyptus camaldulensis ssp. camaldulensis,2016,Group 3,13,138,3.45
+Eucalyptus camaldulensis ssp. camaldulensis,2016,Group 3,14,47,1.175
+Eucalyptus camaldulensis ssp. camaldulensis,2016,Group 5,0,1,0.025
+Eucalyptus camaldulensis ssp. camaldulensis,2016,Group 5,2,7,0.175
+Eucalyptus camaldulensis ssp. camaldulensis,2016,Group 5,3,17,0.425
+Eucalyptus camaldulensis ssp. camaldulensis,2016,Group 5,4,38,0.95
+Eucalyptus camaldulensis ssp. camaldulensis,2016,Group 5,5,73,1.825
+Eucalyptus camaldulensis ssp. camaldulensis,2016,Group 5,6,105,2.625
+Eucalyptus camaldulensis ssp. camaldulensis,2016,Group 5,7,157,3.925
+Eucalyptus camaldulensis ssp. camaldulensis,2016,Group 5,8,276,6.9
+Eucalyptus camaldulensis ssp. camaldulensis,2016,Group 5,9,409,10.225
+Eucalyptus camaldulensis ssp. camaldulensis,2016,Group 5,10,614,15.35
+Eucalyptus camaldulensis ssp. camaldulensis,2016,Group 5,11,739,18.475
+Eucalyptus camaldulensis ssp. camaldulensis,2016,Group 5,12,736,18.4
+Eucalyptus camaldulensis ssp. camaldulensis,2016,Group 5,13,557,13.925
+Eucalyptus camaldulensis ssp. camaldulensis,2016,Group 5,14,271,6.775
+Eucalyptus camaldulensis ssp. camaldulensis,2018,Group 1,3,2,0.05
+Eucalyptus camaldulensis ssp. camaldulensis,2018,Group 1,4,10,0.25
+Eucalyptus camaldulensis ssp. camaldulensis,2018,Group 1,5,26,0.65
+Eucalyptus camaldulensis ssp. camaldulensis,2018,Group 1,6,115,2.875
+Eucalyptus camaldulensis ssp. camaldulensis,2018,Group 1,7,235,5.875
+Eucalyptus camaldulensis ssp. camaldulensis,2018,Group 1,8,493,12.325
+Eucalyptus camaldulensis ssp. camaldulensis,2018,Group 1,9,754,18.85
+Eucalyptus camaldulensis ssp. camaldulensis,2018,Group 1,10,776,19.4
+Eucalyptus camaldulensis ssp. camaldulensis,2018,Group 1,11,779,19.475
+Eucalyptus camaldulensis ssp. camaldulensis,2018,Group 1,12,540,13.5
+Eucalyptus camaldulensis ssp. camaldulensis,2018,Group 1,13,223,5.575
+Eucalyptus camaldulensis ssp. camaldulensis,2018,Group 1,14,47,1.175
+Eucalyptus camaldulensis ssp. camaldulensis,2018,Group 2,2,1,0.025
+Eucalyptus camaldulensis ssp. camaldulensis,2018,Group 2,3,5,0.125
+Eucalyptus camaldulensis ssp. camaldulensis,2018,Group 2,4,17,0.425
+Eucalyptus camaldulensis ssp. camaldulensis,2018,Group 2,5,54,1.35
+Eucalyptus camaldulensis ssp. camaldulensis,2018,Group 2,6,134,3.35
+Eucalyptus camaldulensis ssp. camaldulensis,2018,Group 2,7,273,6.825
+Eucalyptus camaldulensis ssp. camaldulensis,2018,Group 2,8,501,12.525
+Eucalyptus camaldulensis ssp. camaldulensis,2018,Group 2,9,716,17.9
+Eucalyptus camaldulensis ssp. camaldulensis,2018,Group 2,10,811,20.275
+Eucalyptus camaldulensis ssp. camaldulensis,2018,Group 2,11,749,18.725
+Eucalyptus camaldulensis ssp. camaldulensis,2018,Group 2,12,479,11.975
+Eucalyptus camaldulensis ssp. camaldulensis,2018,Group 2,13,217,5.425
+Eucalyptus camaldulensis ssp. camaldulensis,2018,Group 2,14,43,1.075
+Eucalyptus camaldulensis ssp. camaldulensis,2018,Group 3,3,3,0.075
+Eucalyptus camaldulensis ssp. camaldulensis,2018,Group 3,4,10,0.25
+Eucalyptus camaldulensis ssp. camaldulensis,2018,Group 3,5,35,0.875
+Eucalyptus camaldulensis ssp. camaldulensis,2018,Group 3,6,108,2.7
+Eucalyptus camaldulensis ssp. camaldulensis,2018,Group 3,7,224,5.6
+Eucalyptus camaldulensis ssp. camaldulensis,2018,Group 3,8,404,10.1
+Eucalyptus camaldulensis ssp. camaldulensis,2018,Group 3,9,678,16.95
+Eucalyptus camaldulensis ssp. camaldulensis,2018,Group 3,10,804,20.1
+Eucalyptus camaldulensis ssp. camaldulensis,2018,Group 3,11,805,20.125
+Eucalyptus camaldulensis ssp. camaldulensis,2018,Group 3,12,568,14.2
+Eucalyptus camaldulensis ssp. camaldulensis,2018,Group 3,13,286,7.15
+Eucalyptus camaldulensis ssp. camaldulensis,2018,Group 3,14,75,1.875
+Eucalyptus camaldulensis ssp. camaldulensis,2018,Group 5,6,2,0.05
+Eucalyptus camaldulensis ssp. camaldulensis,2018,Group 5,7,11,0.275
+Eucalyptus camaldulensis ssp. camaldulensis,2018,Group 5,8,39,0.975
+Eucalyptus camaldulensis ssp. camaldulensis,2018,Group 5,9,168,4.2
+Eucalyptus camaldulensis ssp. camaldulensis,2018,Group 5,10,435,10.875
+Eucalyptus camaldulensis ssp. camaldulensis,2018,Group 5,11,831,20.775
+Eucalyptus camaldulensis ssp. camaldulensis,2018,Group 5,12,1149,28.725
+Eucalyptus camaldulensis ssp. camaldulensis,2018,Group 5,13,985,24.625
+Eucalyptus camaldulensis ssp. camaldulensis,2018,Group 5,14,380,9.5
+Eucalyptus largiflorens,2015,Group 1,0,18,0.45
+Eucalyptus largiflorens,2015,Group 1,1,58,1.45
+Eucalyptus largiflorens,2015,Group 1,2,159,3.975
+Eucalyptus largiflorens,2015,Group 1,3,280,7
+Eucalyptus largiflorens,2015,Group 1,4,453,11.325
+Eucalyptus largiflorens,2015,Group 1,5,543,13.575
+Eucalyptus largiflorens,2015,Group 1,6,603,15.075
+Eucalyptus largiflorens,2015,Group 1,7,601,15.025
+Eucalyptus largiflorens,2015,Group 1,8,496,12.4
+Eucalyptus largiflorens,2015,Group 1,9,349,8.725
+Eucalyptus largiflorens,2015,Group 1,10,248,6.2
+Eucalyptus largiflorens,2015,Group 1,11,118,2.95
+Eucalyptus largiflorens,2015,Group 1,12,53,1.325
+Eucalyptus largiflorens,2015,Group 1,13,17,0.425
+Eucalyptus largiflorens,2015,Group 1,14,4,0.1
+Eucalyptus largiflorens,2015,Group 2,0,5,0.125
+Eucalyptus largiflorens,2015,Group 2,1,10,0.25
+Eucalyptus largiflorens,2015,Group 2,2,59,1.475
+Eucalyptus largiflorens,2015,Group 2,3,117,2.925
+Eucalyptus largiflorens,2015,Group 2,4,225,5.625
+Eucalyptus largiflorens,2015,Group 2,5,367,9.175
+Eucalyptus largiflorens,2015,Group 2,6,504,12.6
+Eucalyptus largiflorens,2015,Group 2,7,601,15.025
+Eucalyptus largiflorens,2015,Group 2,8,584,14.6
+Eucalyptus largiflorens,2015,Group 2,9,602,15.05
+Eucalyptus largiflorens,2015,Group 2,10,441,11.025
+Eucalyptus largiflorens,2015,Group 2,11,275,6.875
+Eucalyptus largiflorens,2015,Group 2,12,150,3.75
+Eucalyptus largiflorens,2015,Group 2,13,53,1.325
+Eucalyptus largiflorens,2015,Group 2,14,7,0.175
+Eucalyptus largiflorens,2015,Group 3,1,5,0.125
+Eucalyptus largiflorens,2015,Group 3,2,19,0.475
+Eucalyptus largiflorens,2015,Group 3,3,38,0.95
+Eucalyptus largiflorens,2015,Group 3,4,94,2.35
+Eucalyptus largiflorens,2015,Group 3,5,155,3.875
+Eucalyptus largiflorens,2015,Group 3,6,202,5.05
+Eucalyptus largiflorens,2015,Group 3,7,363,9.075
+Eucalyptus largiflorens,2015,Group 3,8,480,12
+Eucalyptus largiflorens,2015,Group 3,9,550,13.75
+Eucalyptus largiflorens,2015,Group 3,10,582,14.55
+Eucalyptus largiflorens,2015,Group 3,11,604,15.1
+Eucalyptus largiflorens,2015,Group 3,12,480,12
+Eucalyptus largiflorens,2015,Group 3,13,313,7.825
+Eucalyptus largiflorens,2015,Group 3,14,115,2.875
+Eucalyptus largiflorens,2016,Group 1,0,1,0.025
+Eucalyptus largiflorens,2016,Group 1,1,6,0.15
+Eucalyptus largiflorens,2016,Group 1,2,49,1.225
+Eucalyptus largiflorens,2016,Group 1,3,131,3.275
+Eucalyptus largiflorens,2016,Group 1,4,199,4.975
+Eucalyptus largiflorens,2016,Group 1,5,357,8.925
+Eucalyptus largiflorens,2016,Group 1,6,527,13.175
+Eucalyptus largiflorens,2016,Group 1,7,671,16.775
+Eucalyptus largiflorens,2016,Group 1,8,683,17.075
+Eucalyptus largiflorens,2016,Group 1,9,572,14.3
+Eucalyptus largiflorens,2016,Group 1,10,394,9.85
+Eucalyptus largiflorens,2016,Group 1,11,262,6.55
+Eucalyptus largiflorens,2016,Group 1,12,106,2.65
+Eucalyptus largiflorens,2016,Group 1,13,31,0.775
+Eucalyptus largiflorens,2016,Group 1,14,11,0.275
+Eucalyptus largiflorens,2016,Group 2,1,2,0.05
+Eucalyptus largiflorens,2016,Group 2,2,17,0.425
+Eucalyptus largiflorens,2016,Group 2,3,26,0.65
+Eucalyptus largiflorens,2016,Group 2,4,78,1.95
+Eucalyptus largiflorens,2016,Group 2,5,197,4.925
+Eucalyptus largiflorens,2016,Group 2,6,293,7.325
+Eucalyptus largiflorens,2016,Group 2,7,445,11.125
+Eucalyptus largiflorens,2016,Group 2,8,630,15.75
+Eucalyptus largiflorens,2016,Group 2,9,662,16.55
+Eucalyptus largiflorens,2016,Group 2,10,659,16.475
+Eucalyptus largiflorens,2016,Group 2,11,533,13.325
+Eucalyptus largiflorens,2016,Group 2,12,283,7.075
+Eucalyptus largiflorens,2016,Group 2,13,152,3.8
+Eucalyptus largiflorens,2016,Group 2,14,23,0.575
+Eucalyptus largiflorens,2016,Group 3,2,2,0.05
+Eucalyptus largiflorens,2016,Group 3,3,12,0.3
+Eucalyptus largiflorens,2016,Group 3,4,32,0.8
+Eucalyptus largiflorens,2016,Group 3,5,85,2.125
+Eucalyptus largiflorens,2016,Group 3,6,137,3.425
+Eucalyptus largiflorens,2016,Group 3,7,240,6
+Eucalyptus largiflorens,2016,Group 3,8,444,11.1
+Eucalyptus largiflorens,2016,Group 3,9,575,14.375
+Eucalyptus largiflorens,2016,Group 3,10,679,16.975
+Eucalyptus largiflorens,2016,Group 3,11,703,17.575
+Eucalyptus largiflorens,2016,Group 3,12,619,15.475
+Eucalyptus largiflorens,2016,Group 3,13,361,9.025
+Eucalyptus largiflorens,2016,Group 3,14,111,2.775
+Eucalyptus largiflorens,2018,Group 0,4,9,0.225
+Eucalyptus largiflorens,2018,Group 0,5,30,0.75
+Eucalyptus largiflorens,2018,Group 0,6,98,2.45
+Eucalyptus largiflorens,2018,Group 0,7,266,6.65
+Eucalyptus largiflorens,2018,Group 0,8,495,12.375
+Eucalyptus largiflorens,2018,Group 0,9,794,19.85
+Eucalyptus largiflorens,2018,Group 0,10,883,22.075
+Eucalyptus largiflorens,2018,Group 0,11,790,19.75
+Eucalyptus largiflorens,2018,Group 0,12,421,10.525
+Eucalyptus largiflorens,2018,Group 0,13,186,4.65
+Eucalyptus largiflorens,2018,Group 0,14,28,0.7
+Eucalyptus largiflorens,2018,Group 1,2,1,0.025
+Eucalyptus largiflorens,2018,Group 1,3,12,0.3
+Eucalyptus largiflorens,2018,Group 1,4,8,0.2
+Eucalyptus largiflorens,2018,Group 1,5,56,1.4
+Eucalyptus largiflorens,2018,Group 1,6,137,3.425
+Eucalyptus largiflorens,2018,Group 1,7,239,5.975
+Eucalyptus largiflorens,2018,Group 1,8,442,11.05
+Eucalyptus largiflorens,2018,Group 1,9,605,15.125
+Eucalyptus largiflorens,2018,Group 1,10,755,18.875
+Eucalyptus largiflorens,2018,Group 1,11,786,19.65
+Eucalyptus largiflorens,2018,Group 1,12,589,14.725
+Eucalyptus largiflorens,2018,Group 1,13,288,7.2
+Eucalyptus largiflorens,2018,Group 1,14,82,2.05
+Eucalyptus largiflorens,2018,Group 2,4,4,0.1
+Eucalyptus largiflorens,2018,Group 2,5,20,0.5
+Eucalyptus largiflorens,2018,Group 2,6,55,1.375
+Eucalyptus largiflorens,2018,Group 2,7,107,2.675
+Eucalyptus largiflorens,2018,Group 2,8,211,5.275
+Eucalyptus largiflorens,2018,Group 2,9,428,10.7
+Eucalyptus largiflorens,2018,Group 2,10,670,16.75
+Eucalyptus largiflorens,2018,Group 2,11,845,21.125
+Eucalyptus largiflorens,2018,Group 2,12,830,20.75
+Eucalyptus largiflorens,2018,Group 2,13,610,15.25
+Eucalyptus largiflorens,2018,Group 2,14,220,5.5
+Eucalyptus largiflorens,2018,Group 3,5,6,0.15
+Eucalyptus largiflorens,2018,Group 3,6,25,0.625
+Eucalyptus largiflorens,2018,Group 3,7,83,2.075
+Eucalyptus largiflorens,2018,Group 3,8,192,4.8
+Eucalyptus largiflorens,2018,Group 3,9,415,10.375
+Eucalyptus largiflorens,2018,Group 3,10,679,16.975
+Eucalyptus largiflorens,2018,Group 3,11,940,23.5
+Eucalyptus largiflorens,2018,Group 3,12,924,23.1
+Eucalyptus largiflorens,2018,Group 3,13,570,14.25
+Eucalyptus largiflorens,2018,Group 3,14,166,4.15
+Eucalyptus largiflorens,2018,Group 5,5,1,0.025
+Eucalyptus largiflorens,2018,Group 5,6,6,0.15
+Eucalyptus largiflorens,2018,Group 5,7,25,0.625
+Eucalyptus largiflorens,2018,Group 5,8,72,1.8
+Eucalyptus largiflorens,2018,Group 5,9,193,4.825
+Eucalyptus largiflorens,2018,Group 5,10,495,12.375
+Eucalyptus largiflorens,2018,Group 5,11,847,21.175
+Eucalyptus largiflorens,2018,Group 5,12,1059,26.475
+Eucalyptus largiflorens,2018,Group 5,13,904,22.6
+Eucalyptus largiflorens,2018,Group 5,14,398,9.95
