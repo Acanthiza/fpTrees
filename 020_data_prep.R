@@ -27,8 +27,10 @@
                   , Species = if_else(grepl("cam",Species),"RRG",Species)
                   , Species = if_else(grepl("larg",Species),"BB",Species)
                   , Species = if_else(grepl("sten",Species),"Cooba",Species)
+                  , Extent = CROWN_EXTE/100
+                  , Density = CROWN_DENS/100
                   ) %>%
-    dplyr::select(HydroGp,Transect,Species,Year,medYear,time,TCI,mTCI)
+    dplyr::select(HydroGp,Transect,Species,Year,medYear,time,TCI,mTCI,Extent,Density)
     
   
   
