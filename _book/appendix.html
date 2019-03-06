@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html >
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Analysis of Katarapko Tree Condition Data</title>
+  <meta name="description" content="Analysis of Katarapko Tree Condition Data">
+  <meta name="generator" content="bookdown 0.7 and GitBook 2.6.7">
+
+  <meta property="og:title" content="Analysis of Katarapko Tree Condition Data" />
+  <meta property="og:type" content="book" />
+  
+  
+  
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Analysis of Katarapko Tree Condition Data" />
+  
+  
+  
+
+<meta name="author" content="Department for Environment and Water">
+<meta name="author" content="Environmental Science and Information Branch">
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  
+  
+<link rel="prev" href="results.html">
+<link rel="next" href="references.html">
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+
+
+
+
+
+
+
+<script src="libs/htmlwidgets-1.2/htmlwidgets.js"></script>
+<link href="libs/datatables-css-0.0.0/datatables-crosstalk.css" rel="stylesheet" />
+<script src="libs/datatables-binding-0.4/datatables.js"></script>
+<link href="libs/dt-core-1.10.16/css/jquery.dataTables.min.css" rel="stylesheet" />
+<link href="libs/dt-core-1.10.16/css/jquery.dataTables.extra.css" rel="stylesheet" />
+<script src="libs/dt-core-1.10.16/js/jquery.dataTables.min.js"></script>
+<link href="libs/dt-ext-responsive-1.10.16/css/responsive.dataTables.min.css" rel="stylesheet" />
+<script src="libs/dt-ext-responsive-1.10.16/js/dataTables.responsive.min.js"></script>
+<link href="libs/dt-ext-buttons-1.10.16/css/buttons.dataTables.min.css" rel="stylesheet" />
+<script src="libs/dt-ext-buttons-1.10.16/js/dataTables.buttons.min.js"></script>
+<script src="libs/dt-ext-buttons-1.10.16/js/buttons.flash.min.js"></script>
+<script src="libs/dt-ext-buttons-1.10.16/js/buttons.html5.min.js"></script>
+<script src="libs/dt-ext-buttons-1.10.16/js/buttons.colVis.min.js"></script>
+<script src="libs/dt-ext-buttons-1.10.16/js/buttons.print.min.js"></script>
+<link href="libs/nouislider-7.0.10/jquery.nouislider.min.css" rel="stylesheet" />
+<script src="libs/nouislider-7.0.10/jquery.nouislider.min.js"></script>
+<link href="libs/selectize-0.12.0/selectize.bootstrap3.css" rel="stylesheet" />
+<script src="libs/selectize-0.12.0/selectize.min.js"></script>
+<link href="libs/crosstalk-1.0.0/css/crosstalk.css" rel="stylesheet" />
+<script src="libs/crosstalk-1.0.0/js/crosstalk.min.js"></script>
+<link href="libs/leaflet-1.3.1/leaflet.css" rel="stylesheet" />
+<script src="libs/leaflet-1.3.1/leaflet.js"></script>
+<link href="libs/leafletfix-1.0.0/leafletfix.css" rel="stylesheet" />
+<script src="libs/Proj4Leaflet-1.0.1/proj4-compressed.js"></script>
+<script src="libs/Proj4Leaflet-1.0.1/proj4leaflet.js"></script>
+<link href="libs/rstudio_leaflet-1.3.1/rstudio_leaflet.css" rel="stylesheet" />
+<script src="libs/leaflet-binding-2.0.2/leaflet.js"></script>
+<script src="libs/leaflet-providers-1.1.17/leaflet-providers.js"></script>
+<script src="libs/leaflet-providers-plugin-2.0.2/leaflet-providers-plugin.js"></script>
+
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li class="chapter" data-level="1" data-path="introduction.html"><a href="introduction.html"><i class="fa fa-check"></i><b>1</b> Introduction</a><ul>
+<li class="chapter" data-level="1.1" data-path="introduction.html"><a href="introduction.html#strategic-context"><i class="fa fa-check"></i><b>1.1</b> Strategic context</a></li>
+<li class="chapter" data-level="1.2" data-path="introduction.html"><a href="introduction.html#this-study"><i class="fa fa-check"></i><b>1.2</b> This study</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="methods.html"><a href="methods.html"><i class="fa fa-check"></i><b>2</b> Methods</a><ul>
+<li class="chapter" data-level="2.1" data-path="methods.html"><a href="methods.html#data-collection"><i class="fa fa-check"></i><b>2.1</b> Data collection</a></li>
+<li class="chapter" data-level="2.2" data-path="methods.html"><a href="methods.html#section"><i class="fa fa-check"></i><b>2.2</b> </a></li>
+<li class="chapter" data-level="2.3" data-path="methods.html"><a href="methods.html#workflow"><i class="fa fa-check"></i><b>2.3</b> Workflow</a></li>
+<li class="chapter" data-level="2.4" data-path="methods.html"><a href="methods.html#model"><i class="fa fa-check"></i><b>2.4</b> Model</a></li>
+<li class="chapter" data-level="2.5" data-path="methods.html"><a href="methods.html#trees"><i class="fa fa-check"></i><b>2.5</b> Trees</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="results.html"><a href="results.html"><i class="fa fa-check"></i><b>3</b> Results</a><ul>
+<li class="chapter" data-level="3.1" data-path="results.html"><a href="results.html#diagnostics"><i class="fa fa-check"></i><b>3.1</b> Diagnostics</a><ul>
+<li class="chapter" data-level="3.1.1" data-path="results.html"><a href="results.html#mcmc-diagnostics"><i class="fa fa-check"></i><b>3.1.1</b> MCMC diagnostics</a></li>
+<li class="chapter" data-level="3.1.2" data-path="results.html"><a href="results.html#model-diagnostics"><i class="fa fa-check"></i><b>3.1.2</b> Model diagnostics</a></li>
+</ul></li>
+<li class="chapter" data-level="3.2" data-path="results.html"><a href="results.html#tci"><i class="fa fa-check"></i><b>3.2</b> TCI</a></li>
+<li class="chapter" data-level="3.3" data-path="results.html"><a href="results.html#difference-to-group-2"><i class="fa fa-check"></i><b>3.3</b> Difference to Group 2</a></li>
+<li class="chapter" data-level="3.4" data-path="results.html"><a href="results.html#overall-results"><i class="fa fa-check"></i><b>3.4</b> Overall results</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="appendix.html"><a href="appendix.html"><i class="fa fa-check"></i><b>4</b> Appendix</a><ul>
+<li class="chapter" data-level="4.1" data-path="appendix.html"><a href="appendix.html#r-packages-used"><i class="fa fa-check"></i><b>4.1</b> R packages used</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i><b>5</b> References</a></li>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Analysis of Katarapko Tree Condition Data</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="appendix" class="section level1">
+<h1><span class="header-section-number">4</span> Appendix</h1>
+<div id="r-packages-used" class="section level2">
+<h2><span class="header-section-number">4.1</span> R packages used</h2>
+<table>
+<caption><span id="tab:packages">Table 4.1: </span>R <span class="citation">(R Core Team <a href="#ref-R-base">2017</a>)</span> packages used in the production of this report</caption>
+<thead>
+<tr class="header">
+<th align="left">Package</th>
+<th align="left">Citation</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">base</td>
+<td align="left"><span class="citation">R Core Team (<a href="#ref-R-base">2017</a>)</span></td>
+</tr>
+<tr class="even">
+<td align="left">bookdown</td>
+<td align="left"><span class="citation">Xie (<a href="#ref-R-bookdown">2018</a><a href="#ref-R-bookdown">a</a>)</span></td>
+</tr>
+<tr class="odd">
+<td align="left">DataExplorer</td>
+<td align="left"><span class="citation">Cui (<a href="#ref-R-DataExplorer">2018</a>)</span></td>
+</tr>
+<tr class="even">
+<td align="left">dplyr</td>
+<td align="left"><span class="citation">Wickham <em>et al.</em> (<a href="#ref-R-dplyr">2018</a><a href="#ref-R-dplyr">b</a>)</span></td>
+</tr>
+<tr class="odd">
+<td align="left">DT</td>
+<td align="left"><span class="citation">Xie (<a href="#ref-R-DT">2018</a><a href="#ref-R-DT">b</a>)</span></td>
+</tr>
+<tr class="even">
+<td align="left">forcats</td>
+<td align="left"><span class="citation">Wickham (<a href="#ref-R-forcats">2018</a><a href="#ref-R-forcats">a</a>)</span></td>
+</tr>
+<tr class="odd">
+<td align="left">ggplot2</td>
+<td align="left"><span class="citation">Wickham <em>et al.</em> (<a href="#ref-R-ggplot2">2018</a><a href="#ref-R-ggplot2">a</a>)</span></td>
+</tr>
+<tr class="even">
+<td align="left">ggridges</td>
+<td align="left"><span class="citation">Wilke (<a href="#ref-R-ggridges">2018</a>)</span></td>
+</tr>
+<tr class="odd">
+<td align="left">gridExtra</td>
+<td align="left"><span class="citation">Auguie (<a href="#ref-R-gridExtra">2017</a>)</span></td>
+</tr>
+<tr class="even">
+<td align="left">knitr</td>
+<td align="left"><span class="citation">Xie (<a href="#ref-R-knitr">2018</a><a href="#ref-R-knitr">c</a>)</span></td>
+</tr>
+<tr class="odd">
+<td align="left">lubridate</td>
+<td align="left"><span class="citation">Spinu <em>et al.</em> (<a href="#ref-R-lubridate">2018</a>)</span></td>
+</tr>
+<tr class="even">
+<td align="left">mgcv</td>
+<td align="left"><span class="citation">Wood (<a href="#ref-R-mgcv">2017</a>)</span></td>
+</tr>
+<tr class="odd">
+<td align="left">purrr</td>
+<td align="left"><span class="citation">Henry and Wickham (<a href="#ref-R-purrr">2019</a>)</span></td>
+</tr>
+<tr class="even">
+<td align="left">readr</td>
+<td align="left"><span class="citation">Wickham <em>et al.</em> (<a href="#ref-R-readr">2017</a>)</span></td>
+</tr>
+<tr class="odd">
+<td align="left">readxl</td>
+<td align="left"><span class="citation">Wickham and Bryan (<a href="#ref-R-readxl">2018</a>)</span></td>
+</tr>
+<tr class="even">
+<td align="left">rstan</td>
+<td align="left"><span class="citation">Guo <em>et al.</em> (<a href="#ref-R-rstan">2018</a>)</span></td>
+</tr>
+<tr class="odd">
+<td align="left">rstanarm</td>
+<td align="left"><span class="citation">Gabry and Goodrich (<a href="#ref-R-rstanarm">2018</a>)</span></td>
+</tr>
+<tr class="even">
+<td align="left">stringr</td>
+<td align="left"><span class="citation">Wickham (<a href="#ref-R-stringr">2018</a><a href="#ref-R-stringr">b</a>)</span></td>
+</tr>
+<tr class="odd">
+<td align="left">tibble</td>
+<td align="left"><span class="citation">Müller and Wickham (<a href="#ref-R-tibble">2019</a>)</span></td>
+</tr>
+<tr class="even">
+<td align="left">tidyr</td>
+<td align="left"><span class="citation">Wickham and Henry (<a href="#ref-R-tidyr">2018</a>)</span></td>
+</tr>
+<tr class="odd">
+<td align="left">tmap</td>
+<td align="left"><span class="citation">Tennekes (<a href="#ref-R-tmap">2018</a>)</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<h3> References</h3>
+<div id="refs" class="references">
+<div id="ref-R-base">
+<p>R Core Team (2017). ‘R: A language and environment for statistical computing’. (R Foundation for Statistical Computing: Vienna, Austria.) Available at: <a href="https://www.R-project.org/" class="uri">https://www.R-project.org/</a></p>
+</div>
+<div id="ref-R-bookdown">
+<p>Xie, Y. (2018a). ‘Bookdown: Authoring books and technical documents with r markdown’. Available at: <a href="https://CRAN.R-project.org/package=bookdown" class="uri">https://CRAN.R-project.org/package=bookdown</a></p>
+</div>
+<div id="ref-R-DataExplorer">
+<p>Cui, B. (2018). ‘DataExplorer: Data explorer’. Available at: <a href="https://CRAN.R-project.org/package=DataExplorer" class="uri">https://CRAN.R-project.org/package=DataExplorer</a></p>
+</div>
+<div id="ref-R-dplyr">
+<p>Wickham, H., François, R., Henry, L., and Müller, K. (2018b). ‘Dplyr: A grammar of data manipulation’. Available at: <a href="https://CRAN.R-project.org/package=dplyr" class="uri">https://CRAN.R-project.org/package=dplyr</a></p>
+</div>
+<div id="ref-R-DT">
+<p>Xie, Y. (2018b). ‘DT: A wrapper of the javascript library ’datatables’’. Available at: <a href="https://CRAN.R-project.org/package=DT" class="uri">https://CRAN.R-project.org/package=DT</a></p>
+</div>
+<div id="ref-R-forcats">
+<p>Wickham, H. (2018a). ‘Forcats: Tools for working with categorical variables (factors)’. Available at: <a href="https://CRAN.R-project.org/package=forcats" class="uri">https://CRAN.R-project.org/package=forcats</a></p>
+</div>
+<div id="ref-R-ggplot2">
+<p>Wickham, H., Chang, W., Henry, L., Pedersen, T. L., Takahashi, K., Wilke, C., and Woo, K. (2018a). ‘Ggplot2: Create elegant data visualisations using the grammar of graphics’. Available at: <a href="https://CRAN.R-project.org/package=ggplot2" class="uri">https://CRAN.R-project.org/package=ggplot2</a></p>
+</div>
+<div id="ref-R-ggridges">
+<p>Wilke, C. O. (2018). ‘Ggridges: Ridgeline plots in ’ggplot2’’. Available at: <a href="https://CRAN.R-project.org/package=ggridges" class="uri">https://CRAN.R-project.org/package=ggridges</a></p>
+</div>
+<div id="ref-R-gridExtra">
+<p>Auguie, B. (2017). ‘GridExtra: Miscellaneous functions for “grid” graphics’. Available at: <a href="https://CRAN.R-project.org/package=gridExtra" class="uri">https://CRAN.R-project.org/package=gridExtra</a></p>
+</div>
+<div id="ref-R-knitr">
+<p>Xie, Y. (2018c). ‘Knitr: A general-purpose package for dynamic report generation in r’. Available at: <a href="https://CRAN.R-project.org/package=knitr" class="uri">https://CRAN.R-project.org/package=knitr</a></p>
+</div>
+<div id="ref-R-lubridate">
+<p>Spinu, V., Grolemund, G., and Wickham, H. (2018). ‘Lubridate: Make dealing with dates a little easier’. Available at: <a href="https://CRAN.R-project.org/package=lubridate" class="uri">https://CRAN.R-project.org/package=lubridate</a></p>
+</div>
+<div id="ref-R-mgcv">
+<p>Wood, S. (2017). ‘Mgcv: Mixed gam computation vehicle with automatic smoothness estimation’. Available at: <a href="https://CRAN.R-project.org/package=mgcv" class="uri">https://CRAN.R-project.org/package=mgcv</a></p>
+</div>
+<div id="ref-R-purrr">
+<p>Henry, L., and Wickham, H. (2019). ‘Purrr: Functional programming tools’. Available at: <a href="https://CRAN.R-project.org/package=purrr" class="uri">https://CRAN.R-project.org/package=purrr</a></p>
+</div>
+<div id="ref-R-readr">
+<p>Wickham, H., Hester, J., and Francois, R. (2017). ‘Readr: Read rectangular text data’. Available at: <a href="https://CRAN.R-project.org/package=readr" class="uri">https://CRAN.R-project.org/package=readr</a></p>
+</div>
+<div id="ref-R-readxl">
+<p>Wickham, H., and Bryan, J. (2018). ‘Readxl: Read excel files’. Available at: <a href="https://CRAN.R-project.org/package=readxl" class="uri">https://CRAN.R-project.org/package=readxl</a></p>
+</div>
+<div id="ref-R-rstan">
+<p>Guo, J., Gabry, J., and Goodrich, B. (2018). ‘Rstan: R interface to stan’. Available at: <a href="https://CRAN.R-project.org/package=rstan" class="uri">https://CRAN.R-project.org/package=rstan</a></p>
+</div>
+<div id="ref-R-rstanarm">
+<p>Gabry, J., and Goodrich, B. (2018). ‘Rstanarm: Bayesian applied regression modeling via stan’. Available at: <a href="https://CRAN.R-project.org/package=rstanarm" class="uri">https://CRAN.R-project.org/package=rstanarm</a></p>
+</div>
+<div id="ref-R-stringr">
+<p>Wickham, H. (2018b). ‘Stringr: Simple, consistent wrappers for common string operations’. Available at: <a href="https://CRAN.R-project.org/package=stringr" class="uri">https://CRAN.R-project.org/package=stringr</a></p>
+</div>
+<div id="ref-R-tibble">
+<p>Müller, K., and Wickham, H. (2019). ‘Tibble: Simple data frames’. Available at: <a href="https://CRAN.R-project.org/package=tibble" class="uri">https://CRAN.R-project.org/package=tibble</a></p>
+</div>
+<div id="ref-R-tidyr">
+<p>Wickham, H., and Henry, L. (2018). ‘Tidyr: Easily tidy data with ’spread()’ and ’gather()’ functions’. Available at: <a href="https://CRAN.R-project.org/package=tidyr" class="uri">https://CRAN.R-project.org/package=tidyr</a></p>
+</div>
+<div id="ref-R-tmap">
+<p>Tennekes, M. (2018). ‘Tmap: Thematic maps’. Available at: <a href="https://CRAN.R-project.org/package=tmap" class="uri">https://CRAN.R-project.org/package=tmap</a></p>
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="results.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="references.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"google": false,
+"linkedin": false,
+"weibo": false,
+"instapper": false,
+"vk": false,
+"all": ["facebook", "google", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"download": null,
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "";
+    if (src === "" || src === "true") src = "https://cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:" && /^https?:/.test(src))
+      src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>

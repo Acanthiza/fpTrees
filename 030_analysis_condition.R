@@ -9,7 +9,7 @@
   library("rstanarm")
   library("lubridate")
   library("ggridges")
-  source("010_data_get.R")
+  #source("010_data_get.R")
   source("020_data_prep.R")
 
   # make stan run on multiple cores
@@ -56,7 +56,7 @@
       dplyr::filter(HydroGp != "mixed"
                     , TCI != 0
                     , transectYears > 1
-                    , Species != "Cooba"
+                    #, Species != "Cooba"
                     ) %>%
       dplyr::select(-transectYears) %>%
       mutate_at(vars(1), as.numeric) %>%
@@ -107,28 +107,16 @@
       facet_wrap(~variable, scales = "free") +
       theme(axis.text.x=element_text(angle=90, vjust=0.5))
     
-    ggsave(paste0("out/",Y,"/",Y,"_explore_YvCat.png"))
+    ggsave(paste0("out/",Y,"/",Y,"_explore_YvsDiscrete.png"))
     
     
     # Y vs. Numeric
     ggplot(datExp %>%
-             dplyr::select_if(is.numeric) %>%
-             tidyr::gather(variable,value,2:ncol(.))
-           , aes(!!ensym(Y),value)
-           ) +
-      geom_jitter(alpha = 0.5) +
-      facet_wrap(~variable, scales = "free")
-      
-    ggsave(paste0("out/",Y,"/",Y,"_explore_YvCont.png"))
-    
-    
-    # Outliers
-    ggplot(datExp %>%
              dplyr::select(varExp) %>%
              dplyr::select_if(is.numeric) %>%
              tidyr::gather(variable,value,2:ncol(.)) %>%
-             dplyr::mutate(id = row_number())
-           , aes(value,id)
+             dplyr::arrange(!!ensym(Y))
+           , aes(!!ensym(Y),value)
            ) +
       geom_jitter(alpha = 0.5
                   , width = 0.1
@@ -137,24 +125,7 @@
       facet_wrap(~variable, scales = "free") +
       theme(axis.text.x=element_text(angle=90, vjust=0.5))
     
-    ggsave(paste0("out/",Y,"/",Y,"_explore_outliersNumeric.png"))
-    
-    
-    ggplot(datExp %>%
-             dplyr::select(varExp) %>%
-             dplyr::mutate_if(is.factor,as.character) %>%
-             dplyr::select_if(is.character) %>%
-             tidyr::gather(variable,value,2:ncol(.)) %>%
-             dplyr::mutate(id = row_number())
-           , aes(value,id)
-           ) +
-      geom_jitter(alpha = 0.5
-                  , width = 0.1
-                  , height = 0.1
-                  ) +
-      facet_wrap(~variable, scales = "free")
-    
-    ggsave(paste0("out/",Y,"/",Y,"_explore_outliersCharacter.png"))
+    ggsave(paste0("out/",Y,"/",Y,"_explore_YvsNumeric.png"))
     
     
     # Homogeneity of variance
@@ -165,19 +136,17 @@
     
     
     # Collinearity among the covariates
-    png(paste0("out/",Y,"/",Y,"_explore_collinearity.png")
-        , width=2000
-        , height=2000
-        , res=300
-        , bg = "transparent"
-        )
-    
-    ggpairs(datExp %>%
+    p <- ggpairs(datExp %>%
               dplyr::select(varExp) %>%
               dplyr::select_if(function(x) length(levels(as.factor(x))) < 14|is.numeric(x))
             )
     
-    dev.off()
+    ggsave(plot = p
+           , paste0("out/",Y,"/",Y,"_explore_collinearity.png")
+           , width = 20
+           , height = 28
+           , units = "cm"
+           )
   
   
 #----Variables model------
@@ -192,8 +161,8 @@
     
     datMod <- datExp %>%
       dplyr::select(varMod) #%>%
-      # dplyr::mutate(mTCI = if_else(mTCI==0,0.001,mTCI)
-      #               , mTCI = if_else(mTCI>0.999,0.999,mTCI)
+      # dplyr::mutate(UQ(rlang::sym(Y)) :=  if_else(!!ensym(Y)==0,0.001,!!ensym(Y))
+      #               , UQ(rlang::sym(Y)) :=  if_else(!!ensym(Y)>0.999,0.999,!!ensym(Y))
       #               )
 
 #-----Model------
@@ -203,7 +172,7 @@
       
       stan_glmer(
                 as.formula(paste("cbind(",get("Y"),",14-",get("Y"),") ~ time*Species*HydroGp + (1|Transect)")) #binomial
-                #as.formula(paste(get("Y")," ~ time*Species*HydroGp + (1|Transect)")) # gaussian
+                #as.formula(paste(get("Y")," ~ time*Species*HydroGp + (1|Transect)")) # gaussian or beta
                 , data = datMod
                 #, family = mgcv::betar
                  , family = binomial
@@ -221,9 +190,15 @@
     # Model fit
     a <- pp_check(mod) + coord_cartesian(xlim = c(0,quantile(mod$fitted.values,probs=0.05))) + labs(title = "0-quantile(0.1)")
     b <- pp_check(mod) + coord_cartesian(xlim = c(0,quantile(mod$fitted.values,probs=0.5))) + labs(title = "0-quantile(0.5)")
-    c <- pp_check(mod) + labs(title = "0-max pred")
-    d <- grid.arrange(a,b,c)
-    ggsave(paste0("out/",Y,"/",Y,"_diagnostic_fit.png"),d)
+    c <- pp_check(mod) + coord_cartesian(xlim = c(quantile(mod$fitted.values,probs=0.5),max(mod$fitted.values))) + labs(title = "quantile(0.5)-max")
+    d <- pp_check(mod) + labs(title = "0-max pred")
+    e <- grid.arrange(a,b,c,d)
+    ggsave(paste0("out/",Y,"/",Y,"_diagnostic_fit.png")
+           , width = 20
+           , height = 28
+           , units = "cm"
+           , e
+           )
   
     # Trace plot
     ggsave(paste0("out/",Y,"/",Y,"_diagnostic_trace.png"),stan_trace(mod))
@@ -306,14 +281,15 @@
     write_csv(paste0("out/",Y,"/",Y,"_res_residuals.csv"))
   
   # Y vs. residuals
-  ggplot(residuals, aes(!!ensym(Y),standResid,label=Transect,colour=Transect)) +
+  ggplot(residuals, aes(!!ensym(Y),residual,label=Transect,colour=Transect)) +
     geom_text(size = 2
               #, alpha=0.5
               , position=position_jitter(width=0.3,height=0.2)
               ) +
     geom_hline(aes(yintercept = 0),linetype = 2) +
     facet_grid(Species~HydroGp) +
-    scale_colour_gradient2(mid = "yellow",midpoint=(max(datExp$Transect)-min(datExp$Transect))/2)
+    scale_colour_viridis_c()
+    #scale_colour_gradient2(mid = "yellow",midpoint=(max(datExp$Transect)-min(datExp$Transect))/2)
   
   ggsave(paste0("out/",Y,"/",Y,"_diagnostic_",Y,"vsResiduals.png"))
   
@@ -327,7 +303,8 @@
               ) +
     geom_hline(aes(yintercept = 0),linetype = 2) +
     facet_grid(Species~HydroGp) +
-    scale_colour_gradient2(mid = "yellow",midpoint=(max(datExp$Transect)-min(datExp$Transect))/2)
+    scale_colour_viridis_c()
+    #scale_colour_gradient2(mid = "yellow",midpoint=(max(datExp$Transect)-min(datExp$Transect))/2)
   
   ggsave(paste0("out/",Y,"/",Y,"_diagnostic_TimevsResiduals.png"))
   
@@ -421,7 +398,8 @@
                 ) +
     facet_grid(Species~HydroGp) +
     theme(axis.text.x = element_text(angle=90, hjust=0)) +
-    scale_colour_gradient2(mid = "yellow",midpoint=(max(datExp$Transect)-min(datExp$Transect))/2) +
+    scale_colour_viridis_c() +
+    #scale_colour_gradient2(mid = "yellow",midpoint=(max(datExp$Transect)-min(datExp$Transect))/2) +
     treeColFill
   
   ggsave(paste0("out/",Y,"/",Y,"_res_plot.png")
