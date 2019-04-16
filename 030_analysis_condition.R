@@ -334,9 +334,9 @@
   
   modDeltaRes <- modDelta %>%
     dplyr::group_by(HydroGp,Species,Year) %>%
-    dplyr::summarise(Higher = sum(diff>0)
-                     , Lower = sum(diff<0)
-                     , Same = sum(diff==0)
+    dplyr::summarise(Higher = sum(diff > 1)
+                     , Lower = sum(diff < -1)
+                     , Same = sum(diff <= 1|diff >= -1)
                      ) %>%
     dplyr::ungroup() %>%
     tidyr::gather(direction,n,Higher:ncol(.)) %>%
