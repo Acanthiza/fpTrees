@@ -334,15 +334,24 @@
   
   modDeltaRes <- modDelta %>%
     dplyr::group_by(HydroGp,Species,Year) %>%
-    dplyr::summarise(Higher = sum(diff > 1)
-                     , Lower = sum(diff < -1)
-                     , Same = sum(diff <= 1|diff >= -1)
+    # dplyr::summarise(Higher = sum(diff > 0)
+    #                  , Lower = sum(diff < 0)
+    #                  , Same = sum(diff == 0 )
+    #                  ) %>%
+    dplyr::summarise(n = n()
+                     , nCheck = nrow(as_tibble(mod))
+                     , modMedian = quantile(diff,0.5)
+                     , modMean = mean(diff)
+                     , modci90lo = quantile(diff, 0.05)
+                     , modci90up = quantile(diff, 0.95)
+                     , ci = modci90up-modci90lo
+                     , text = paste0(round(modMedian,2)," (",round(modci90lo,2)," to ",round(modci90up,2),")")
                      ) %>%
     dplyr::ungroup() %>%
-    tidyr::gather(direction,n,Higher:ncol(.)) %>%
-    dplyr::group_by(Species,HydroGp,Year) %>%
-    dplyr::mutate(prob = 100*n/sum(n)) %>%
-    dplyr::ungroup() %>%
+    # tidyr::gather(direction,n,Higher:ncol(.)) %>%
+    # dplyr::group_by(Species,HydroGp,Year) %>%
+    # dplyr::mutate(prob = 100*n/sum(n)) %>%
+    # dplyr::ungroup() %>%
     write_csv(paste0("out/",Y,"/",Y,"_res_deltaRes.csv"))
   
   

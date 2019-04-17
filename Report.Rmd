@@ -273,8 +273,8 @@ Figure \@ref(fig:valueFig) shows the distribution of credible values for `r Y`.
 ```{r valueTab}
 
   kable(modRes %>%
-          dplyr::select(Year,HydroGp, Species, modMedian) %>%
-          tidyr::spread(Species, modMedian) %>%
+          dplyr::select(Year,HydroGp, Species, text) %>%
+          tidyr::spread(Species, text) %>%
           dplyr::arrange(HydroGp,Year)
         , caption = paste0("Median credible value for ",Y)
         )
@@ -326,14 +326,10 @@ Figure \@ref(fig:diffFig) shows the distribution of credible values for the diff
 ```{r diffTab}
 
   kable(modDeltaRes %>%
-              dplyr::select(-n) %>%
-              dplyr::filter(direction == "Higher") %>%
-              dplyr::mutate(prob = round(prob,1)) %>%
-              dplyr::select(HydroGp,Year,Species,prob) %>%
-              tidyr::spread(Species,prob) %>%
-              dplyr::arrange(HydroGp,Year)
-              
-          , caption = paste0("Likelihood of higher ",Y," in Group x compared to Group 2")
+          dplyr::select(Year,HydroGp, Species, text) %>%
+          tidyr::spread(Species, text) %>%
+          dplyr::arrange(HydroGp,Year)
+        , caption = paste0("Median difference in ",Y," between Group x and Group 2")
         )
 
 ```
@@ -353,17 +349,17 @@ Figure \@ref(fig:diffFig) shows the distribution of credible values for the diff
                           , alpha=0.5
                           , panel_scaling = FALSE
                           ) +
-      geom_vline(aes(xintercept = -1)
+      geom_vline(aes(xintercept = 0)
                  , linetype = 2
                  , colour = "red"
                  ) +
-      geom_vline(aes(xintercept = 1)
-                 , linetype = 2
-                 , colour = "blue"
-                 ) +
+      # geom_vline(aes(xintercept = 1)
+      #            , linetype = 2
+      #            , colour = "blue"
+      #            ) +
       facet_grid(HydroGp~Species) +
       labs(subtitle = paste0("Distribution of credible values for the difference from Group 2 ",Y)
-           , caption = "Within the solid lines on each distribution represents 95% credible intervals\nWithin the dotted lines (-1 to 1) was defined as the same as Group 2\nBelow the red line was defined as less than Group 2\nAbove the blue line was defined as more than Group 2"
+           , caption = "Within the solid lines on each distribution represents 95% credible intervals"
            , y = "Year"
            , x = "Group x - Group 2"
            ) +
